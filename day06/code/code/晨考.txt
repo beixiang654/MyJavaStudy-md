@@ -1,0 +1,35 @@
+1.方法的四种形式的语法格式
+	无参无返回值的方法
+	public static void test () {}
+	有参无返回值的方法
+	public static void test (int a, int b) {}
+	无参有返回值的方法
+	public static int test () {
+		return 3;
+	} 
+	有参有返回值的方法
+	public static String test (String a) {
+		return "嘻嘻";
+	}
+2.return 关键字的用法
+	用在有返回值的方法中
+return后面还能再写代码吗？
+	不能的
+
+3.break和continue关键字的用法
+	break 终止 打断的
+	continue 跳出当前循环 继续下次循环
+在哪个地方可以用break和continue
+	break  循环和switch-case
+	continue 循环
+4.if-else 分支语法格式和执行流程
+	
+5.逻辑运算符的介绍
+	与  &&
+	或  ||
+	非  !
+6.swicth-case语法格式和执行流程
+	
+7.转义字符的意思
+	目的: 将无意义的字符转为有意义的字符 
+		或者 将有意义的字符转为无意义的字符
