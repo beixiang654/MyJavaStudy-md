@@ -1,0 +1,30 @@
+1.声明一个类的语法格式
+	class Person {//Person类的名字  首字母要大写
+		//属性:Java使用变量
+		String name;
+		int age;
+		//构造方法
+		public Person () {//无参构造方法
+		}
+		public Person (String name, int age) {
+			this.name = name;
+			this.age = age;
+		}
+		//方法
+		public void eat ()　｛
+		
+		｝
+	}
+2.通过类创建一个对象
+	现在写在main主函数中
+	类名 对象名字 = new 类名();
+	Person person1 = new Person();//通过无参构造方法创建
+	Person person2 = new Person("狗蛋", 12);//通过有参构造方法创建
+3.无参数的构造方法语法格式
+
+4.有参数构造方法的语法格式
+5.构造方法的作用是啥
+初始化对象的
+6.在类中声明方法的语法格式是什么
+	public void  方法的名字() {
+	}
