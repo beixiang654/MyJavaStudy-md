@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.cls2 {
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="xixi">
+			<span>好玩但是头晕</span>
+		</div>
+		<span id="lx" class="cls1">老邢</span>
+		<span>骚磊</span>
+		<span>老万</span>
+	</body>
+	<script>
+		var div = document.getElementById("xixi")
+		//console.log(div.innerHTML)//取值	<span>好玩但是头晕</span>  包含了标签的
+		//div.innerHTML = "呵呵哒"  在赋值
+		//console.log(div.innerText)//好玩但是头晕 不带标签的
+		
+		//1.想获取三个标签中的内容，咋获取
+		var spans = document.getElementsByTagName("span")
+		for (var i = 0; i < spans.length; i++) {
+			console.log(spans[i].innerHTML)
+		}
+		
+		//2.改变元素的属性（class）的属性值
+		spans[1].setAttribute("class", "cls2")
+		//3.换一种写法 有局限性的  有问题的
+		spans[1].id = "hehe"
+		
+		//4.改变元素的样式的写法
+		spans[2].style.color = "green"
+		//在css中backgroup-color  在js中写的是backgroundColor
+		spans[2].style.backgroundColor="tomato"
+		spans[2].style.fontSize = "50px"
+		
+		
+		//总结:   1.js改变html的内容  innerHTML  innerText
+		//        2.js改变html元素的属性的属性值 setAttribute("属性", "新的属性值")
+		//        3.js改变html元素的CSS样式  对象.style.css属性 = css的值
+	</script>
+</html>

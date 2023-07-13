@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.cls {
+				width: 300px;
+				height: 300px;
+				background-color: indianred;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>一行白鹭上青天</p>
+		</div>
+		<button onclick="test2()">点我变哦</button>
+		<!-- 点击按钮  
+		1.去改变div中的元素的内容 
+		2.改变div的属性
+		3.改变css样式
+		-->
+	</body>
+	<script>
+		// 1.去改变div中的元素的内容 
+		function test () {
+			var divs = document.getElementsByTagName("div")
+			divs[0].innerHTML = "<span>两只猴子鸣翠柳</span>"
+			
+		}
+		//2.改变div的属性
+		function test1 () {
+			var divs = document.getElementsByTagName("div")
+			divs[0].setAttribute("class", "cls")
+			
+		}
+		//3.改变css样式
+		function test2 () {
+			var divs = document.getElementsByTagName("div")
+			divs[0].style.height = "200px"
+			divs[0].style.width = "200px"
+			divs[0].style.backgroundColor = "green"
+			
+		}
+	</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="checkbox" id="quanxuan">全选<br>
+		
+		<input type="checkbox" class="cls" >抽烟<br>
+		<input type="checkbox" class="cls">喝酒<br>
+		<input type="checkbox" class="cls">烫头<br>
+		<input type="checkbox" class="cls">烫头<br>
+		
+		
+	</body>
+	<script>
+		var quanxuan = document.getElementById("quanxuan")//元素
+		console.log(quanxuan.checked)
+		var allBox = document.getElementsByClassName("cls")//数组
+		quanxuan.onclick = function () {
+			if (quanxuan.checked) {
+				for (var i = 0; i < allBox.length; i++) {
+					//每一个checkbox这个对象都有一个属性叫checked
+					
+					allBox[i].checked = true
+				}
+			} else {
+				for (var i = 0; i < allBox.length; i++) {
+					//每一个checkbox这个对象都有一个属性叫checked
+					
+					allBox[i].checked = false
+				}
+			}
+			
+		}
+		
+		
+	</script>
+</html>

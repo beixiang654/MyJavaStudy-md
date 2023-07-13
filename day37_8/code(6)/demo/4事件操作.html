@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.cls1 {
+				height: 200px;
+				width:200px;
+				background-color: red;
+			}
+			.cls2 {
+				height: 200px;
+				width:200px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cls1">
+			
+		</div>
+		<input type="text"id="in">
+		<button id="btn" onclick="test()">点我变颜色</button>
+	</body>
+	<script>
+		// function test () {
+		// 	var div = document.getElementsByClassName("cls1")[0]
+		// 	div.setAttribute('class', "cls2")
+		// }
+		var btn = document.getElementById("btn")
+		btn.onclick = function () {
+			var div = document.getElementsByClassName("cls1")[0]
+			div.setAttribute('class', "cls2")
+		}
+		var input = document.getElementById("in")
+		input.onfocus = function () {
+			this.style.backgroundColor = "red"
+			this.style.height = "20px"
+		}
+		input.onblur = function () {
+			this.style.height = "200px"
+			this.style.backgroundColor = "green"
+		}
+	</script>
+</html>
