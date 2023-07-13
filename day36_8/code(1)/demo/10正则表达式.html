@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	
+	<script>
+		var pattern = /\d/
+		var ret = pattern.test("12345")
+		console.log(ret)
+		
+		//验证手机正则表达式
+		/*
+					^ 抑扬符: 第一位代表起始位
+					[356789]：第二位 在356789任意一个数字
+					\d:带表0-9数字
+					{n}：代表n个数字
+				*/
+		var pattern1 = /^1[3-9]\d{9}/
+		console.log(pattern1.test("18203601672"))
+		
+		//邮箱验证  n{X,Y} 匹配包含 X 至 Y 个 n 的序列的字符串。
+		var pattern2 =/^[0-9a-zA-Z]+[@][0-9A-Za-z]+([.][a-zA-Z]+){1,2}$/
+		console.log(pattern2.test("Yxdsahnsa8393@qq.com.cn"))
+	</script>
+</html>

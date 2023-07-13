@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 第三种引入方式
+		 在任意位置  书写script标签 然后引入外部的js文件
+		 -->
+		 <script src="test.js"></script>
+		 
+	</head>
+	<body>
+		<!-- 第一种引入方式
+			button是按钮的标签
+			onclick :是button标签的属性 当点击按钮的时候会执行这个属性（触发这个事件）
+			相当于执行onclick这个属性值
+			alert('嘻嘻哒')  属性值 是一个函数 js内置的函数 这个函数功能是弹框效果
+			当点击 按钮会弹出 嘻嘻哒的框
+		 -->
+		<button onclick="alert('嘻嘻哒')">点我啊！！！</button>
+		
+	</body>
+	<!-- 第二种引入方式   在任意位置书写script 标签 双边的
+	在标签中书写js的代码即可
+	-->
+	<script>
+		//window.alert("呵呵");
+		var num = 20;
+		//创建了一个变量而已
+		//相当与Java中的 sout
+		console.log(num);//在控制台展示
+		//想在浏览器中的页面展示
+		document.write("狗蛋");
+		
+		
+	</script>
+</html>
+

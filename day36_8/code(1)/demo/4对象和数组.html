@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		/* 数据类型 对象  object 
+		语法格式:
+			var 变量名字 = {键1:值1, 键2:值2, ...};
+			
+		*/
+	   var student = {"name":"世达", "age": 89, "info":"吃的多，象那个啥一样"};
+	   console.log(student)
+	   console.log(typeof student)
+	   //获取对象的数据  Java中一样  对象.属性
+	   console.log(student.name)
+	   
+	   console.log(student.info)
+	   //扩展还有另外一种写法
+	   console.log(student["age"])
+	   
+	   //数组，本质还是对象object
+	   //声明数组的第一种方式
+	   var arr = new Array();//空的数组
+	   arr[0] = "a";
+	   arr[1]  = 78;
+	   arr[2] = true;
+	   arr.push("b");
+	   console.log(arr);
+	   console.log(typeof arr)//object
+	   //第二种声明方式
+	   var arr1 = [1,2,3,4,5];
+	   console.log(arr1)
+	   //毫无疑问 可以借助于数组下标取数据
+	   //思考？  一个数组中存多个对象？ 咋写？
+	   var stus = [ {"name":"轩嘉", "age": 45, "info":"开心的很"}, 
+					{"name":"永杰", "age": 91, "info":"你吃什么呢"},
+					{"name":"艺博", "age": 98, "info":"千锋骚王"} ];
+		//总结:  碰到[] 就是数组，碰到{}  就是对象
+		console.log(stus[2].name)
+		
+		var data = {"code":1, "msg":"成功", "data":[{"name":"goudan", "age":78,"hobby":["篮球", "足球"]},{"name":"嘻嘻", "age":18, "hobby":["唱", "敲代码"]}]};
+		console.log(data.data[1].name)
+		
+		//总结: 碰到大括号就用  .  碰到 [] 就用下标 
+	   console.log(data.data[0].hobby[0])
+	   
+	   
+	</script>
+</html>

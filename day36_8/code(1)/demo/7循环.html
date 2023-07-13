@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		for (var i = 0; i < 9; i++) {
+			document.write(i + "<br>")
+		}
+		
+		var stus = [ {"name":"轩嘉", "age": 45, "info":"开心的很"},
+							{"name":"永杰", "age": 91, "info":"你吃什么呢"},
+							{"name":"艺博", "age": 98, "info":"千锋骚王"} ];
+		for (var i = 0; i < stus.length; i++) {
+			console.log(stus[i].name)
+		}
+		//另外一种遍历
+		for (var stukey in stus) {
+			console.log(stus[stukey])
+		}
+		var stu = {"name":"轩嘉", "age": 45, "info":"开心的很"};
+		for (var stuKey in stu) {
+			console.log(stu[stuKey])
+		}
+		//作业  打印99乘法表
+	</script>
+</html>

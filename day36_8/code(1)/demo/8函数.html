@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 当事件发生时（当用户点击按钮时） -->
+		<button onclick="test()">点我啊</button>
+	</body>
+	<script>
+		// 无参的函数
+		function test () {
+			console.log("呵呵");
+		}
+		function test1 (a, b) {
+			console.log(a + b)
+		}
+		function test2 () {
+			return "嘻嘻"
+		}
+		function test3 (a, b) {
+			return a + b;
+		}	
+		
+		
+		// 匿名函数  没有名字的函数
+		var s = function () {
+			console.log("哈哈")
+		}
+		
+	</script>
+	<script>
+		//当 JavaScript 代码调用时
+		test1(2, 3);
+		var str = test2();
+		document.write(str)
+		s();//调用匿名函数
+	</script>
+	<script>
+		var person = {
+		    firstName:"世达",
+		    lastName: "邱博",
+		    fullName: function () {
+		        return this.firstName + "❤ " + this.lastName;
+		    }
+		}
+		console.log(person.fullName())	
+	</script>
+</html>
