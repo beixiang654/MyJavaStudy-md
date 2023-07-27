@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div class="d1">嘻嘻</div>
+    <span>计划的时间</span>
+    <footer class="f1">但是你们那</footer>
+    <header id="h1">沙卡拉卡</header>
+    <button id="btn">点击</button>
+</body>
+<!--需求:  点击按钮，将div中的嘻嘻变成  哈哈-->
+<script>
+    //原生的js写法
+    // var btn = document.getElementById("btn");
+    // btn.onclick = function () {
+    //     var d1 = document.getElementsByClassName("d1")[0];
+    //     d1.innerHTML = "哈哈"
+    //
+    // }
+    //jquery 写法   $(selector).action()
+    //$(selector)  找到元素
+    //.action()   做什么事情
+    $("#btn").click(function () {
+        $(".d1").html("和恶")
+    })
+    //总结:  找到元素 然后让元素干什么事情！！！
+
+    console.log($("span"))//  标签选择器
+    console.log($(".f1"))//class选择器
+    console.log($("#h1"))//id选择器
+</script>
+</html>

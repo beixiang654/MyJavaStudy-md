@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div id="d1"><b>换手机</b></div>
+    <input type="text" name="username" value="goudan" id="i1">
+    <a href="http://www.baidu.com">去百度</a>
+    <button id="btn">点击</button>
+</body>
+<script>
+    $("#btn").click(function () {
+        //原生的js咋写
+        console.log(document.getElementById("d1").innerHTML)
+        //jquery写法
+        //html设置或返回所选元素的内容
+        //不给参数的就是获取
+        console.log($("#d1").html())
+        //给参数就是设置
+       // $("#d1").html("<b>可以</b>")
+        console.log($("#d1").text())
+       $("#d1").text("<b>你是</b>")
+        console.log($("#i1").val())
+
+        $("#i1").val("嘻嘻")
+        console.log($("a").attr("href"))//获取
+        //设置值
+        $("a").attr("href", "http://www.4399.com")
+    })
+</script>
+</html>

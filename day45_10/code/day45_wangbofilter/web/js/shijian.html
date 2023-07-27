@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+
+    <input id="i1">
+
+</body>
+<script>
+    // $("#d1").mouseenter(function () {
+    //     // $("#d1").css("background-color", "blue")
+    //     $(this).hide()
+    // })
+    $("#d1").hover(
+        function(){
+            alert("你进入了 d1!");
+        },
+        function(){
+            alert("拜拜! 现在你离开了 d1!");
+        }
+    );
+    $("#i1").focus(function(){
+        $(this).css("background-color","red");
+    });
+</script>
+</html>

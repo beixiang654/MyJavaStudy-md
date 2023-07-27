@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: mediumvioletred;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    休息
+    <a>嘻嘻</a>
+</div>
+<button>点我啊</button>
+</body>
+<script>
+    $("button").click(function () {
+        //删除被选元素（及其子元素）
+        //$("#div1").remove()
+        //$("#div1").remove();
+
+        $("#div1").empty()
+    })
+</script>
+</html>
